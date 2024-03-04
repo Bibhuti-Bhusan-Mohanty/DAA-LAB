@@ -1,13 +1,14 @@
 /*program to find a elemnat of an array using binary search*/
 
-#include <stdio.h>
-int binary_search(int [], int, int);
+#include<stdio.h>
 
-int main() {
+int binary_search(int [],int,int);
+
+int main(){
     int arr[20],i,n,num,indx=0;
     printf("\nEnter the number of elements:");
     scanf("%d",&n);
-    printf("Enter %d elements in ascending order:\n", n);
+    printf("Enter %d elements in ascending order:\n",n);
     for(i=0;i<n;i++)
         scanf("%d",&arr[i]);
     printf("\nEnter the element to search:");

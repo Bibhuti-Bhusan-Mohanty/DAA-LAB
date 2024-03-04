@@ -1,6 +1,7 @@
 /*program to find a element from an array*/
 
-#include <stdio.h>
+#include<stdio.h>
+
 int element_search(int[],int,int);
 
 int main(){
@@ -14,7 +15,7 @@ int main(){
     printf("\nEnter the element to search:");
     scanf("%d",&num);
     indx=element_search(arr,n,num);
-    if (indx != -1)
+    if(indx!=-1)
         printf("%d found at position %d\n",num,indx); 
     else
         printf("Element not found !\n");
@@ -22,8 +23,8 @@ int main(){
 }
 
 int element_search(int arr[],int n,int ele){
-    for (int i=0;i<n;i++){
-        if(arr[i] == ele)
+    for(int i=0;i<n;i++){
+        if(arr[i]==ele)
             return i+1;
     }
     return -1;
