@@ -2,7 +2,7 @@
 
 #include<stdio.h>
 
-int linear_search(int arr[],int start,int end,int ele);
+int linear_search_recurssive(int arr[],int start,int end,int ele);
 
 int main(){
     int arr[20],n,num,indx=0;
