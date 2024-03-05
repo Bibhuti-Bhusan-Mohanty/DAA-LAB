@@ -1,6 +1,7 @@
 /*program to do a menu base program for different sorting*/
 
 #include<stdio.h>
+
 int arr[20],n;
 
 void input();
