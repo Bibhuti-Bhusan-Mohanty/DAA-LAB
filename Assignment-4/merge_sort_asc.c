@@ -22,15 +22,13 @@ int main(){
 }
 
 void printarray(int arr[],int size){
-    int i;
-    for (i=0;i<size;i++)
+    for(int i=0;i<size;i++)
         printf("%d ",arr[i]);
     printf("\n");
 }
 
 void merge_sort(int arr[],int l,int r){
-    if(l<r)
-    {
+    if(l<r){
         int m=(l+r)/2;
         merge_sort(arr,l,m);
         merge_sort(arr,m+1,r);
