@@ -18,24 +18,20 @@ int main(){
     return 0;
 }
 
-void push(char item)
-{
+void push(char item){
 	if(top >= size-1)
 		printf("\nStack Overflow!\n");
-	else
-	{
+	else{
 		top++;
 		stack[top]=item;
 	}
 }
 
-char pop()
-{
+char pop(){
 	char item;
 	if(top<0)
 		printf("\nStack Underflow!\n");
-	else
-	{
+	else{
 		item=stack[top];
 		top--;
 		return(item);
@@ -70,8 +66,7 @@ void infix_postfix(char infix[50],char postfix[50]){
 		}
         else if(item==')'){
 			x=pop();
-			while(x!='(')
-			{
+			while(x!='('){
 				postfix[j]=x;
 				j++;
 				x=pop();

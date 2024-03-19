@@ -54,12 +54,9 @@ void output(int arr[],int n){
 
 void bubble_asc(int arr[],int n){
     int temp;
-    for(int i=0;i<n-1;i++)
-    {
-        for(int j=0;j<n-i-1;j++)
-        {
-            if(arr[j]>arr[j+1])
-            {
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-i-1;j++){
+            if(arr[j]>arr[j+1]){
                 temp=arr[j];
                 arr[j]=arr[j+1];
                 arr[j+1]=temp;
@@ -71,13 +68,10 @@ void bubble_asc(int arr[],int n){
 void selection_desc(int arr[],int n){
     int i,j,temp;
 	j=0;
-	while(j<n)
-	{
+	while(j<n){
 		i=j+1;
-		while(i<n)
-		{
-			if(arr[i]>arr[j])
-			{
+		while(i<n){
+			if(arr[i]>arr[j]){
 				
 				temp=arr[i];
 				arr[i]=arr[j];
@@ -91,12 +85,10 @@ void selection_desc(int arr[],int n){
 
 void insertion_asc(int arr[],int n){
     int i,j,temp;
-    for(i=0;i<=n-1;i++)
-    {
+    for(i=0;i<=n-1;i++){
         temp=arr[i];
         j=i-1;
-        while(j>=0 && temp<arr[j])
-        {
+        while(j>=0 && temp<arr[j]){
             arr[j+1]=arr[j];
             j--;
         }
