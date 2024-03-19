@@ -25,7 +25,7 @@ int main(){
 			printf("The array is randomly inputted.\n");
 			for(i = 0; i < n; i++)
 				a[i] = rand()%(n+1);
-				break;
+			break;
             case 2:
 			display(a, n);
 			break;
