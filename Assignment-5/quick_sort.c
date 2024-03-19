@@ -4,12 +4,17 @@
 #include<stdlib.h>
 #include<time.h>
 
-void input(int [], int);
-void display(int [], int);
 void quicksort(int arr[],int l,int h);
 int partition(int arr[],int l,int h);
 
 int main(){
+	int n;
+	printf("Enter the number of elements in the array.\n");
+	scanf("%d",&n);
+	int a[n];
+	printf("The array is randomly inputted.\n");
+	for(int i=0;i<n;i++)
+		a[i]=rand()%(n+1);
 }
 
 void quicksort(int arr[],int l,int h)
