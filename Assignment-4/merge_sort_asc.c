@@ -15,7 +15,7 @@ int main(){
         scanf("%d",&arr[i]);
     printf("\nGiven array is:\n");
     printarray(arr,size);
-    merge_sort(arr,0,size- 1);
+    merge_sort(arr,0,size-1);
     printf("\nSorted array is:\n");
     printarray(arr,size);
     return 0;
