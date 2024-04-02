@@ -1,18 +1,20 @@
 /*program to sort a given array in ascending order using heap sort implement the functions max_heapify(),build_max_heap(),heap_sort()*/
 
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 void max_heapify(int arr[],int n,int i);
 void build_max_heap(int arr[],int n);
 void heap_sort(int arr[],int n);
 
 int main(){
-    int arr[20],n;
-    printf("\nEnter the size of array:");
-    scanf("%d",&n);
-    printf("\nEnter %d elements:\n",n);
-    for(int i=0;i<n;i++)
-        scanf("%d",&arr[i]);
+    int arr[1000], n;
+    printf("\nEnter the size of array(1-1000): ");
+    scanf("%d", &n);
+    srand(time(NULL));
+    for (int i = 0; i < n; i++)
+        arr[i] = rand(); 
     heap_sort(arr, n);
     printf("Sorted Array:\n");
     for (int i = 0; i < n; i++)
