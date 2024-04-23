@@ -5,7 +5,6 @@ int m[100][100];
 int s[100][100]; 
 
 void matrixChainOrder(int p[], int n) {
-  
   for (int i = 1; i < n; i++)
     m[i][i] = 0;
   for (int L=2; L<n; L++) {
