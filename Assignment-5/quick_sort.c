@@ -33,6 +33,7 @@ int main(){
 			end=clock();
 			cpu_time=end-start;
 			printf("Time taken : %lf seconds\n",cpu_time/CLOCKS_PER_SEC);
+			
 			case 4:
             printf("Program Terminated\n");
             exit(0);

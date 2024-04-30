@@ -13,7 +13,7 @@ int partition(int arr[], int low, int high){
     int random =low + rand() % (high - low);
     swap(&arr[random], &arr[high]);
     int pivot = arr[high]; 
-    int i = (low - 1);
+    int i = low - 1;
     for(int j = low; j <= high - 1; j++){
         if (arr[j] < pivot){
             i++; 
@@ -29,7 +29,7 @@ void randomizedQuickSort(int arr[], int low, int high){
         int pi = partition(arr, low, high);
         randomizedQuickSort(arr, low, pi - 1);
         randomizedQuickSort(arr, pi + 1, high);
-        }
+    }
 }
 
 int main(){
