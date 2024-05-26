@@ -11,7 +11,8 @@ void implementlcs(int b[maxlen][maxlen], char x[], int i, int j) {
     if (b[i][j] == 0) {
         implementlcs(b, x, i-1, j-1);
         printf("%c", x[i-1]);
-    } else if (b[i][j] == 1)
+    } 
+    else if (b[i][j] == 1)
         implementlcs(b, x, i-1, j);
     else
         implementlcs(b, x, i, j-1);
@@ -32,10 +33,12 @@ void lcs(char x[], char y[]) {
             if (x[i-1] == y[j-1]) {
                 c[i][j] = c[i-1][j-1] + 1;
                 b[i][j] = 0;
-            } else if (c[i-1][j] >= c[i][j-1]) {
+            } 
+            else if (c[i-1][j] >= c[i][j-1]) {
                 c[i][j] = c[i-1][j];
                 b[i][j] = 1;
-            } else {
+            } 
+            else {
                 c[i][j] = c[i][j-1];
                 b[i][j] = -1;
             }
